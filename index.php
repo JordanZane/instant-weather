@@ -13,24 +13,26 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="offset-lg-2 col-lg-8">
                     <div id="weather-container">
                         <h2 id="town-name"></h2>
-                        <div id="clouds-container">
-
-                        </div>
-                        <div id="temperature-container">
-                            
-                        </div>
-                        <div id="infos-container">
-                            <div id="wind-content">
+                        <div class="weather-content">
+                            <div id="clouds-container">
 
                             </div>
-                            <div id="precip-content">
+                            <div id="temperature-container">
                                 
                             </div>
-                            <div id="pressure-content">
-                                
+                            <div id="infos-container">
+                                <div id="wind-content">
+
+                                </div>
+                                <div id="precip-content">
+                                    
+                                </div>
+                                <div id="pressure-content">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
