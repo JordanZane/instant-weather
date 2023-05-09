@@ -11,7 +11,7 @@ body{
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                color: $color-red;
+                color: $color-white;
                 #clouds-container{
                     display: flex;
                     flex-direction: column-reverse;
@@ -25,10 +25,26 @@ body{
                     font-size: 28px;
                 }
             }
-            #button-town-container{
+            form{
                 text-align: center;
                 color: $color-red;
                 margin-top: 30px;
+                #townNameInput{
+                    background: unset;
+                    border: unset;
+                    border-bottom: 1px solid $color-red;
+                    color: $color-red;
+                    margin: 0 15px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                #townNameSubmit{
+                    background: unset;
+                    border: unset;
+                    color: $color-red;
+                    font-size: 24px;
+                }
             }
         }
     }

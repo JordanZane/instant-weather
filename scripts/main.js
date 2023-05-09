@@ -20,9 +20,7 @@ townNameSubmit.addEventListener("click", function(e){
         const location = dataGoogle.results[0].geometry.location;
         const lat = location.lat;
         const lon = location.lng;
-        console.log(`Latitude: ${lat}, Longitude: ${lon}`);
         
-        // Update the weather data using the retrieved latitude and longitude
         updateWeatherData(lat, lon);
         } else {
         console.log('No results found for the town name.');
