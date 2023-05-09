@@ -35,6 +35,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="button-town-container">
+                            <form action="">
+                                <label for="townNameInput">Research your town :</label>
+                                <input type="text" id="townNameInput">
+                                <button type="submit" id="townNameSubmit">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

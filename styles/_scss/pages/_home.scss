@@ -1,6 +1,6 @@
 body{
     main{
-        div#weather-container{
+        #weather-container{
             background: $color-blue;
             padding: 15px;
             border-radius: 5px;
@@ -24,6 +24,11 @@ body{
                 #temperature-container{
                     font-size: 28px;
                 }
+            }
+            #button-town-container{
+                text-align: center;
+                color: $color-red;
+                margin-top: 30px;
             }
         }
     }
