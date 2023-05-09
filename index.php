@@ -23,7 +23,15 @@
                             
                         </div>
                         <div id="infos-container">
-                            
+                            <div id="wind-content">
+
+                            </div>
+                            <div id="precip-content">
+                                
+                            </div>
+                            <div id="pressure-content">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>

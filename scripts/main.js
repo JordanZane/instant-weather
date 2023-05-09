@@ -23,15 +23,28 @@ function currentWeather(data){
     townNameContent.innerText = data.name;
 
     let cloudsContainer = document.querySelector("#clouds-container");
+    let cloudsImage = document.createElement("img");
+    let cloudsIcon = data.weather[0].icon;
+    let cloudsIconUrl = `https://openweathermap.org/img/wn/${cloudsIcon}.png`;
     cloudsContainer.innerText = data.weather[0].description;
+    cloudsImage.src = cloudsIconUrl;
+    cloudsContainer.appendChild(cloudsImage);
 
     let tempatureContent = document.querySelector("#temperature-container");
     temperature = (data.main.temp - 273.15).toFixed(1);
-    tempatureContent.innerText = temperature;
-    console.log(typeof temperature);
+    tempatureContent.innerText = temperature + "C°";
 
-    let infosContainer = document.querySelector("#infos-container");
+    let windContainer = document.querySelector("#wind-content");
+    let precipContainer = document.querySelector("#precip-content");
+    let pressureContainer = document.querySelector("#pressure-content");
 
-
+    windContainer.innerText = "Winds : " + data.wind.speed + " m/s";
+    if(data.rain){
+        precipContainer.innerText = "Precip : " + data.rain["1h"] || 0 + "mm/h";
+    }else{
+        precipContainer.innerText = "Precip : 0 mm/h";
+    }
+    
+    pressureContainer.innerText = "Pressure : " +data.main.pressure;
 }
 
